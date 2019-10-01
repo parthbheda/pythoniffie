@@ -1,5 +1,5 @@
 import math
-people = int(input('How much people? '))
+people = int(input('How many people? '))
 
 pizza = 1.5
 
