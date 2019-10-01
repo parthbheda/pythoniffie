@@ -1,0 +1,5 @@
+import sys
+if sys.version_info[0] < 3:
+	print("Python 2.X")
+else:
+	print("Python 3.X")
