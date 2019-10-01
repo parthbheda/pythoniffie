@@ -1,4 +1,4 @@
-data = "one"
+data = "one" # very good code
 if data == 1:
   print("one is equal to 1")
 else:
