@@ -1,3 +1,5 @@
+## Python program to check whether a number is positive, negative or zero.
+
 num = 3.4
 
 # Try these two variations as well:
