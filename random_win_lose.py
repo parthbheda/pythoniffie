@@ -1,3 +1,5 @@
+## Program to generate a random number and check for winr/losses if the number is odd/even.
+
 from random import randint
 
 def winOrLose(wanted):
