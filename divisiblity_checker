@@ -1,0 +1,7 @@
+#given two numbers decide if it is divisible by the other number or not
+divident = int(input('enter the number whose divisibilty to check: '))
+divider =  int(input('enter the number with whom the divisiblity is to be checked: '))
+if(divident%divider==0):
+    print('divisible')
+else:
+    print('not divisible')
