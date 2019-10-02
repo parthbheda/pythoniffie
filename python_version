@@ -1,3 +1,5 @@
+## Program to check the version of Python installed on the system running it
+
 import sys
 if sys.version_info[0] < 3:
 	print("Python 2.X")
