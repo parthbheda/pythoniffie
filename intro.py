@@ -8,5 +8,7 @@ if (1<=n<=1000) and (1300<=r<=1501) :
             
             if a<r:
                 print("Bad boi")
+                break
             elif a>=r:
                 print("Good boi")
+                break;
