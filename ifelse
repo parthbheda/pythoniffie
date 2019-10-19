@@ -1,4 +1,4 @@
-x = 41
+x = int(input())
 
 if x > 10:
   print("Above ten,")
