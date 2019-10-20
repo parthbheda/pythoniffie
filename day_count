@@ -1,0 +1,8 @@
+#DAY_COUNT.PY
+
+days = int(input("How many days are in March?: "))
+if days == 31:
+  print("You passed the test.")
+else:
+  print("You failed the test.")
+print("Thank You!")
