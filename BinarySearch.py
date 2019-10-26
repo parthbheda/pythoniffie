@@ -1,24 +1,18 @@
-#A searching technique which has a time complexity of O(log n)
+def binarySearch(arr, l, r, x):
+    mid = (l + r) // 2
+    if l <= r:
+        if x == arr[mid]:
+            return mid
+        elif x < arr[mid]:
+            return binarySearch(arr, l, mid-1, x)
+        else:
+            return binarySearch(arr, mid+1, r, x)
+    return -1
 
-l = [int(x) for x in input().split()] #takes list as input
-ele = int(input()) #reading the required number
-lb, ub = 0, len(l) - 1 #defining the lower bound and the upper bound
-mid = (lb + ub) // 2
-flag = 0
-# add l.sort() if input can be unsorted as this searching method is applicable only for sorted list
 
-while(lb <= ub):
-    mid = (lb + ub) // 2
-
-    if ele == l[mid]:
-        flag = 1
-        break
-    elif ele > l[mid]:
-        lb = mid + 1
-    else:
-        ub = mid - 1
-
-if flag == 1:
-    print("Element Found")
-else:
-    print("Element NOT Found")
+if __name__ == '__main__':
+    number = 26
+    listOfNumber = [0, 1, 6, 14, 15, 17, 18, 20, 21, 26, 28, 32, 44,
+                    47, 59, 61, 63, 64, 65, 67, 70, 71, 75, 78, 80, 82, 96, 99]
+    index = binarySearch(listOfNumber, 0, len(listOfNumber) - 1, number)
+    print(index)

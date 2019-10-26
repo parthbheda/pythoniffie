@@ -1,20 +1,13 @@
-import sys
-
-def generate_fibonacci(num): 
-    if num <=  1 :  
-        return num  
-    else :  
-        return (generate_fibonacci (num - 2 ) + generate_fibonacci (num - 1 ))
-
-def main():
-    terms =  int ( input ( " How many terms? " ))  
-    if terms <=  0 :  
-        print("Enter more than 0 terms!")
-        sys.exit()
-    else :  
-        print("Fibonacci sequence for {} terms is: ".format(terms))
-    for term in  range (terms):  
-        print (generate_fibonacci (term))
-
-if __name__ == '__main__':
-    main()
+n=int(input())
+def Fibonacci(n): 
+	if n<0: 
+		print("Incorrect input") 
+	# First Fibonacci number is 0 
+	elif n==1: 
+		return 0
+	# Second Fibonacci number is 1 
+	elif n==2: 
+		return 1
+	else: 
+		return Fibonacci(n-1)+Fibonacci(n-2) 
+print(Fibonacci(n)) 
