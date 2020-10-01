@@ -1,11 +1,11 @@
 def menue():
     print Welcome to your calculater'
     print 'Please press ...'
-    print '1 to add up 2 numbers'
-    print '2 to subtract 2 numbers'
-    print '3 to multiplicate 2 numbers'
-    print '4 to divide 2 numbers'
-    print '5 uto close the program'
+    print '1 to adding 2 numbers\n'
+    print '2 to subtract 2 numbers\n'
+    print '3 to multiplicate 2 numbers\n'
+    print '4 to divide 2 numbers\n'
+    print '5 uto close the program\n'
    
 while True:
     menue()
@@ -31,5 +31,5 @@ while True:
         ergebnis_dividieren = zahl_eins / zahl_zwei
         print 'Das Ergebnis ist %s' % ergebnis_dividieren
     if option == '5':
-        print 'Auf Wiedersehn'
+        print('Auf Wiedersehn')
         break 
